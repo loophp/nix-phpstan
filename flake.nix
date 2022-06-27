@@ -18,6 +18,12 @@
           inherit system;
         };
 
+        php = pkgs.php.buildEnv {
+          extraConfig = ''
+            memory_limit=-1
+          '';
+        };
+
         phpstan = pkgs.stdenv.mkDerivation {
           name = "phpstan";
 
@@ -31,7 +37,7 @@
             runHook preInstall
             mkdir -p $out/bin
             install -D $src/phpstan.phar $out/bin/
-            makeWrapper ${pkgs.php}/bin/php $out/bin/phpstan \
+            makeWrapper ${php}/bin/php $out/bin/phpstan \
               --add-flags "$out/bin/phpstan.phar"
             runHook postInstall
           '';
