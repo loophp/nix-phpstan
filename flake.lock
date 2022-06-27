@@ -1,0 +1,61 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1656065134,
+        "narHash": "sha256-oc6E6ByIw3oJaIyc67maaFcnjYOz1mMcOtHxbEf9NwQ=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "bee6a7250dd1b01844a2de7e02e4df7d8a0a206c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1656250965,
+        "narHash": "sha256-2IlNf6jxEJiuCrGymqLOLjxk2SIj4HhVIwEb0kvcs24=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "9a17f325397d137ac4d219ecbd5c7f15154422f4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "phpstan-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1656330633,
+        "narHash": "sha256-6sokBCdx2MTegJdhQ02owGB/AxJ8xDTlWiFn2B9JUCc=",
+        "owner": "phpstan",
+        "repo": "phpstan",
+        "rev": "b0193e38d70ee72a43661d58acf7551cd97bd866",
+        "type": "github"
+      },
+      "original": {
+        "owner": "phpstan",
+        "ref": "1.7.x",
+        "repo": "phpstan",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs",
+        "phpstan-src": "phpstan-src"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
