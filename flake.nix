@@ -6,7 +6,7 @@
     flake-utils.url = "github:numtide/flake-utils";
     flake-utils.inputs.nixpkgs.follows = "nixpkgs";
     phpstan-src = {
-      url = "github:phpstan/phpstan/1.7.x";
+      url = "github:phpstan/phpstan";
       flake = false;
     };
   };
