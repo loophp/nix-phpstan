@@ -53,6 +53,16 @@
         packages = flake-utils.lib.flattenTree {
           default = phpstan;
         };
+
+        devShells = {
+          default = pkgs.mkShellNoCC {
+            name = "PHPStan";
+
+            buildInputs = [
+              self.packages.${system}.default
+            ];
+          };
+        };
       }
     );
 
