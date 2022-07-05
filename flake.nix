@@ -31,14 +31,12 @@
 
           dontUnpack = true;
 
-          nativeBuildInputs = [ pkgs.makeWrapper ];
+          nativeBuildInputs = [ pkgs.makeWrapper php ];
 
           installPhase = ''
             runHook preInstall
             mkdir -p $out/bin
-            install -D $src/phpstan.phar $out/bin/
-            makeWrapper ${php}/bin/php $out/bin/phpstan \
-              --add-flags "$out/bin/phpstan.phar"
+            makeWrapper ${php}/bin/php $out/bin/phpstan --add-flags "$src/phpstan.phar"
             runHook postInstall
           '';
         };
