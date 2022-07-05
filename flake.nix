@@ -6,7 +6,7 @@
     flake-utils.url = "github:numtide/flake-utils";
     flake-utils.inputs.nixpkgs.follows = "nixpkgs";
     phpstan-src = {
-      url = "github:phpstan/phpstan";
+      url = "https://raw.githubusercontent.com/phpstan/phpstan/1.8.x/phpstan.phar";
       flake = false;
     };
   };
@@ -36,7 +36,9 @@
           installPhase = ''
             runHook preInstall
             mkdir -p $out/bin
-            makeWrapper ${php}/bin/php $out/bin/phpstan --add-flags "$src/phpstan.phar"
+            install -D $src $out/bin/phpstan.phar
+            makeWrapper ${php}/bin/php $out/bin/phpstan \
+              --add-flags "$out/bin/phpstan.phar"
             runHook postInstall
           '';
         };
