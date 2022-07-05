@@ -6,24 +6,5 @@ on:
     - cron: '* */4 * * *'
 
 jobs:
-  auto-upgrade-flake-lock:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-            fetch-depth: 1
-
-      - name: Install Nix
-        uses: cachix/install-nix-action@v17
-        with:
-          nix_path: nixpkgs=channel:nixos-unstable
-
-      - name: Update flake.lock
-        run: nix flake update
-
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Update `flake.lock` file.
-          file_pattern: flake.lock
+  UpdateFlakeLock:
+    uses: loophp/flake-lock-update-workflow/.github/workflows/auto-upgrade-flakes.yaml@main
