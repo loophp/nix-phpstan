@@ -34,7 +34,7 @@
     "phpstan-src": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-hYE/43DaVRXCDuLzkJFPTp2yQtzvdgiEYEjLONx+c5k=",
+        "narHash": "sha256-uXhiZmKhO68Y4fGOdRR4iIrvjpRkTfi3ENs0/PPtVFw=",
         "type": "file",
         "url": "https://raw.githubusercontent.com/phpstan/phpstan/1.8.x/phpstan.phar"
       },
