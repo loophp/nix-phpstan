@@ -2,11 +2,11 @@
   "nodes": {
     "flake-utils": {
       "locked": {
-        "lastModified": 1667077288,
-        "narHash": "sha256-bdC8sFNDpT0HK74u9fUkpbf1MEzVYJ+ka7NXCdgBoaA=",
+        "lastModified": 1667395993,
+        "narHash": "sha256-nuEHfE/LcWyuSWnS8t12N1wc105Qtau+/OdUAjtQ0rA=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "6ee9ebb6b1ee695d2cacc4faa053a7b9baa76817",
+        "rev": "5aed5285a952e0b949eb3ba02c12fa4fcfef535f",
         "type": "github"
       },
       "original": {
@@ -34,11 +34,11 @@
     "phpstan-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1667329714,
-        "narHash": "sha256-mSTMiqcFZVnuxz+fGhnKIvJ6HK/iVLPb5XkqNjyBw6Y=",
+        "lastModified": 1667423723,
+        "narHash": "sha256-yigXm/q9mooOTBti/5POIg0EIOpHSIKAh6rZQFLyRak=",
         "owner": "phpstan",
         "repo": "phpstan",
-        "rev": "639b64fccefe26f0e97dc81a3708159d53533d82",
+        "rev": "8562844777c385626ef7c8cabd442e50667d847a",
         "type": "github"
       },
       "original": {
