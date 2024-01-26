@@ -54,11 +54,11 @@
     "phpstan-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1706092991,
+        "lastModified": 1706190191,
         "narHash": "sha256-VGOK+e7fI2vtoFWBF+H68S0oW7z44WhtuGdIeT2mKl4=",
         "owner": "phpstan",
         "repo": "phpstan",
-        "rev": "1477e750b4e1e449960b1572fda3e039984073c7",
+        "rev": "a5acb5955ce5c208890187b5c709c19241d8ba96",
         "type": "github"
       },
       "original": {
