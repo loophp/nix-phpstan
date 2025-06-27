@@ -19,11 +19,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1750836778,
-        "narHash": "sha256-sRLyRiC7TezRbbjGJwUFOgb2xMbSr3wQ0oJKfYlQ6s0=",
+        "lastModified": 1750865895,
+        "narHash": "sha256-p2dWAQcLVzquy9LxYCZPwyUdugw78Qv3ChvnX755qHA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d7bb1922f0bb3d0c990f56f9cdb767fdb20a5f22",
+        "rev": "61c0f513911459945e2cb8bf333dc849f1b976ff",
         "type": "github"
       },
       "original": {
@@ -51,11 +51,11 @@
     "phpstan-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1750773024,
-        "narHash": "sha256-0DvMy3LgeQkV5KYSybFT8I4cj9YKyoiYm5DlgZ9HMgA=",
+        "lastModified": 1750940540,
+        "narHash": "sha256-JB7+KnZexvvqZcQhay+NNuczQjLBBuXs0bitSiNgHOg=",
         "owner": "phpstan",
         "repo": "phpstan",
-        "rev": "42eac288c625c262165f900e88a895c729053f31",
+        "rev": "c883a90ec7ed3b379b8400ccb1d3f0bce9315a7d",
         "type": "github"
       },
       "original": {
